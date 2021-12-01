@@ -1,4 +1,6 @@
-const dayOne = require('../../day-1/a');
+const dayOne = require('../../day-1/index');
+
+/* part one */
 
 test('culmativeIncreases should output 0 for an input of 1', () => {
     expect(dayOne.culmativeIncreases([1])).toBe(0);
@@ -22,4 +24,18 @@ test('culmativeIncreases should output 7 for an input of sample data', () => {
 
 test('culmativeIncreasesFromFile should work ', () => {
     console.log(dayOne.culmativeIncreasesFromFile());
+});
+
+/* part two */
+
+test('culmativeIncreases should output 1 for an input of 0,0,0,1', () => {
+    expect(dayOne.culmativeThreeWindowedIncreases([0,0,0,1])).toBe(1);
+});
+
+test('culmativeIncreases should output 5 for sample input', () => {
+    expect(dayOne.culmativeThreeWindowedIncreases([607,618,618,617,647,716,769,792])).toBe(5);
+});
+
+test('culmativeIncreasesFromFile should workt', () => {
+    console.log(dayOne.culmativeThreeWindowedIncreasesFromFile());
 });
