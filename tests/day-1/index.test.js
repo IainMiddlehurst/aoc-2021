@@ -4,10 +4,10 @@ const dayOne = require('../../day-1/index');
 
 test('culmativeIncreases should output 0 for an input of 1', () => {
     expect(dayOne.culmativeIncreases([1])).toBe(0);
-  });
+});
 
 test('culmativeIncreases should output 2 for an input of 1,2,3', () => {
-  expect(dayOne.culmativeIncreases([1,2,3])).toBe(2);
+    expect(dayOne.culmativeIncreases([1,2,3])).toBe(2);
 });
 
 test('culmativeIncreases should output 1 for an input of 1,3,2', () => {
@@ -23,7 +23,7 @@ test('culmativeIncreases should output 7 for an input of sample data', () => {
 });
 
 test('culmativeIncreasesFromFile should work ', () => {
-    console.log(dayOne.culmativeIncreasesFromFile());
+    // console.log(dayOne.culmativeIncreasesFromFile());
 });
 
 /* part two */
@@ -37,5 +37,5 @@ test('culmativeIncreases should output 5 for sample input', () => {
 });
 
 test('culmativeIncreasesFromFile should workt', () => {
-    console.log(dayOne.culmativeThreeWindowedIncreasesFromFile());
+    // console.log(dayOne.culmativeThreeWindowedIncreasesFromFile());
 });
