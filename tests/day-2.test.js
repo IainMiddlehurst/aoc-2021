@@ -19,5 +19,5 @@ test('sample data outputs expected out', () => {
 });
 
 test('calculatePositionFromFile works', () => {
-    console.log(main.calculatePositionFromFile());
+    // console.log(main.calculatePositionFromFile());
 });
